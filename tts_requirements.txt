@@ -1,0 +1,4 @@
+gradio
+edge-tts
+PyPDF2
+python-docx

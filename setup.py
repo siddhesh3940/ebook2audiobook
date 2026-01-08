@@ -26,11 +26,11 @@ class PostInstallCommand(install):
             print("unidic download failed during installation, but it will be re-attempted a diffrent way when the app itself runs.")
 
 setup(
-    name='ebook2audiobook',
+    name='text-to-speech',
     version=get_version(),
     python_requires=">3.9,<3.13",
-    author="Drew Thomasson",
-    description="Convert eBooks to audiobooks with chapters and metadata",
+    author="Siddhesh",
+    description="Multi-language text-to-speech with file upload support",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/DrewThomasson/ebook2audiobook",
@@ -44,7 +44,7 @@ setup(
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            "ebook2audiobook = app:main",
+            "text-to-speech = tts_app:main",
         ],
     },
     cmdclass={
